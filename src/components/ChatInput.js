@@ -15,7 +15,7 @@ const ChatInput = ({ user, clickedUser, getUserMessages, getClickedUsersMessages
         }
 
         try {
-            await axios.post('https://tinder-server123x.herokuapp.com/message', { message })
+            await axios.post(' https://salty-dusk-63517.herokuapp.com/https://tinder-server123x.herokuapp.com/message', { message })
             getUserMessages()
             getClickedUsersMessages()
             setTextArea("")

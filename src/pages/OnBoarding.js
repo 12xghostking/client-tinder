@@ -27,7 +27,7 @@ const OnBoarding = () => {
         console.log('submitted')
         e.preventDefault()
         try {
-            const response = await axios.put(' https://salty-dusk-63517.herokuapp.com/https://tinder-server123x.herokuapp.com/user', {formData})
+            const response = await axios.put(' https://tinder-server123x.herokuapp.com/user', {formData})
             console.log(response)
             const success = response.status === 200
             if (success) navigate('/dashboard')

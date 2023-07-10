@@ -11,7 +11,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
 
   const getMatches = async () => {
     try {
-      const response = await axios.get("https://tinder-server123x.herokuapp.com/users", {
+      const response = await axios.get("https://tinder-backend-mgmo.onrender.com/users", {
         params: { userIds: JSON.stringify(matchedUserIds) },
       });
       setMatchedProfiles(response.data);

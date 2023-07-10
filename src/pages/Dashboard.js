@@ -15,7 +15,7 @@ const Dashboard = () => {
 
     const getUser = async () => {
         try {
-            const response = await axios.get(' https://tinder-server123x.herokuapp.com/user', {
+            const response = await axios.get(' https://tinder-backend-mgmo.onrender.com/user', {
                 params: {userId}
             })
             setUser(response.data)
@@ -25,7 +25,7 @@ const Dashboard = () => {
     }
     const getGenderedUsers = async () => {
         try {
-            const response = await axios.get(' https://tinder-server123x.herokuapp.com/gendered-users', {
+            const response = await axios.get(' https://tinder-backend-mgmo.onrender.com/gendered-users', {
                 params: {gender: user?.gender_interest}
             })
             setGenderedUsers(response.data)
@@ -47,7 +47,7 @@ const Dashboard = () => {
 
     const updateMatches = async (matchedUserId) => {
         try {
-            await axios.put(' https://tinder-server123x.herokuapp.com/addmatch', {
+            await axios.put(' https://tinder-backend-mgmo.onrender.com/addmatch', {
                 userId,
                 matchedUserId
             })
